@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 app.use(express.static('public'));
-app.get('/index.htm', function (req, res) {
+app.get('/', function (req, res) {
    res.sendFile( __dirname + "/" + "index.htm" );
 })
 
